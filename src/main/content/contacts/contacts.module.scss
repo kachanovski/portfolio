@@ -2,15 +2,18 @@
 
 .contacts {
   @extend %main-container;
-  height: 70vh;
+  height: 700px;
   background-color: #f8f9fa !important;
   display: grid;
-  grid-template-rows: 30vh 40vh;
+  grid-template-rows: 300px 400px;
   justify-content: center;
 
   @media (max-width: 480px) {
     width: 480px;
-    grid-template-rows: 10vh 40vh;
+    height: 560px;
+    grid-template-rows: 80px 500px;
+    margin: 0;
+    padding: 0;
   }
 
   h1 {
@@ -32,6 +35,10 @@
     .contactForm {
       margin-left: 10px;
       width: 1156px;
+
+      @media (max-width: 480px) {
+        margin: 0;
+      }
 
       input {
         font-family: inherit;

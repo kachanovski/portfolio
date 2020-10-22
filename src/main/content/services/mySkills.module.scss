@@ -1,15 +1,16 @@
 @import "src/styles/settings";
 
-.services {
+.mySkills {
   @extend %main-container;
-  height: 90vh;
+  height: 600px;
   background-color: #f8f9fa;
   display: grid;
   justify-content: center;
 
   @media (max-width: 480px) {
     width: 480px;
-    height: 400px;
+    height: 600px;
+    margin: 0;
   }
 
   h1 {
@@ -26,9 +27,11 @@
     color: black;
     width: 1104px;
     align-self: center;
+    padding-top: 200px;
 
     @media (max-width: 480px) {
       width: 480px;
+      padding: 0;
     }
 
 

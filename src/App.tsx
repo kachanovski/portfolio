@@ -15,7 +15,14 @@ const App = () => {
         <div className="App">
             <NavBar/>
             <div className={'main'}>
-                <Switch>
+                <HomePage/>
+                <AboutMe/>
+                <MySkills/>
+                <Portfolio/>
+                <Contacts/>
+                <Footer/>
+
+               {/* <Switch>
                     <Route path={['/home', '/']} render={() => (<HomePage/>)}/>
                     <Route path='/aboutMe' render={() => (<AboutMe/>)}/>
                     <Route path='/mySkills' render={() => (<MySkills/>)}/>
@@ -23,7 +30,7 @@ const App = () => {
                     <Route path='/contacts' render={() => (<Contacts/>)}/>
                     <Route render={() => (<h1>404</h1>)}/>
                 </Switch>
-                <Footer/>
+                <Footer/>*/}
             </div>
         </div>
     );
