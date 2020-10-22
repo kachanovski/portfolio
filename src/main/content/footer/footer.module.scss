@@ -1,0 +1,23 @@
+@import "src/styles/settings";
+
+.footer {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  padding-left: 260px;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    width: 400px;
+    height: 100px;
+    padding-left: 40px;
+  }
+
+  span {
+    font-size: 20px;
+
+    @media (max-width: 480px) {
+     font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+//colors
+$turquoise_color: #20c997;
+$orange_color: rgb(253, 126, 20);
+
+// main-content
+%main-container {
+  display: flex;
+  flex-direction: column;
+  width: 1643px;
+  color: white;
+  position: initial;
+  padding-left: 260px;
+}
+
+
+// page title
+%page-h1-title {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 130px;
+  position: absolute;
+  opacity: 10%;
+  color: #6c757d;
+  padding-left: 260px;
+}
+
+
+%page-h3-title {
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 160px;
+  color: black;
+  padding-left: 260px;
+  text-decoration: #20c997 underline;
+  text-decoration-skip: leading-spaces;
+}
+
+@media (max-width: 480px) {
+  %main-container {
+    padding: 0;
+
+  }
+  %page-h1-title {
+    font-size: 60px;
+    padding: 0;
+  }
+  %page-h3-title {
+    font-size: 20px;
+    padding: 0;
+    margin-top: 70px;
+  }
+}
+

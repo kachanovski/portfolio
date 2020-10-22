@@ -1,0 +1,53 @@
+@import "src/styles/settings";
+
+.services {
+  @extend %main-container;
+  height: 90vh;
+  background-color: #f8f9fa;
+  display: grid;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    width: 480px;
+    height: 400px;
+  }
+
+  h1 {
+    @extend %page-h1-title
+  }
+
+  h3 {
+    @extend %page-h3-title
+  }
+
+  .progressBar {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    color: black;
+    width: 1104px;
+    align-self: center;
+
+    @media (max-width: 480px) {
+      width: 480px;
+    }
+
+
+
+    .rightBar {
+      display: grid;
+      justify-content: center;
+      align-self: start;
+    }
+
+    .leftBar {
+      display: grid;
+      justify-content: center;
+      align-self: start;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+
+  }
+}

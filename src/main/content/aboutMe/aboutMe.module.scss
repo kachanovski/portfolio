@@ -1,0 +1,131 @@
+@import "src/styles/settings";
+
+.aboutMe {
+  @extend %main-container;
+  color: black;
+
+  @media (max-width: 480px) {
+    width: 480px;
+    height: 600px;
+  }
+
+  .aboutMe_wrap {
+    display: grid;
+    grid-template-rows: 30vh 30vh 20vh;
+    justify-content: center;
+    width: 1382px + 260px;
+    height: auto;
+
+    @media (max-width: 480px) {
+      width: 480px;
+      grid-template-rows: 90px 280px 200px;
+    }
+
+
+    h1 {
+      @extend %page-h1-title
+    }
+
+    h3 {
+      @extend %page-h3-title
+    }
+
+    .aboutMeContainer {
+      width: 1104px;
+      height: 261px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 4fr 2fr;
+
+      @media (max-width: 480px) {
+        margin-top: 60px;
+        width: 440px;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+
+        @media (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+
+      span {
+        color: $turquoise_color
+      }
+
+      .aboutMeText {
+        text-align: start;
+        font-size: 20px;
+        line-height: 1.8;
+
+        @media (max-width: 480px) {
+          font-size: 10px;
+        }
+      }
+
+      .address {
+        padding-top: 16px;
+        text-align: start;
+
+        .addressList {
+          font-size: 19px;
+          border-bottom: 1px #6c757d solid;
+          padding-top: 25px;
+
+          @media (max-width: 480px) {
+            font-size: 10px;
+          }
+        }
+      }
+
+    }
+
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 480px) {
+        grid-template-columns: repeat(2, 220px);
+        grid-template-rows: repeat(2, 52px);
+        align-self: end ;
+      }
+
+      .brandsBox {
+        height: 65px;
+        font-size: 22px;
+        padding-top: 32px;
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+        height: 20px;
+      }
+      }
+
+
+      :nth-child(2) {
+        border-left: 1px #6c757d dotted;
+        @media (max-width: 480px) {
+          border-left: 1px #6c757d dotted;
+          border-bottom: 1px #6c757d dotted;
+        }
+      }
+
+      :nth-child(3) {
+        border-left: 1px #6c757d dotted;
+        @media (max-width: 480px) {
+          border-top: 1px #6c757d dotted;
+          border-left: none;
+        }
+      }
+
+      :nth-child(4) {
+        border-left: 1px #6c757d dotted;
+      }
+    }
+  }
+}

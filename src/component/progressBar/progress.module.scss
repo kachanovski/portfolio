@@ -1,0 +1,61 @@
+@import "src/styles/settings";
+
+@for $i from 0 through 100 {
+  .progress progress[value="#{$i}"] {
+    & + .progressValue:before {
+      content: '#{$i}%'
+    }
+
+    & ~ .progressBg .progressBar {
+      width: $i * 1%
+    }
+  }
+}
+
+.progress {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+
+  progress {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: -777px;
+  }
+
+  @media (max-width: 480px) {
+    width: 350px;
+  }
+
+}
+
+.progressValue {
+  color: #333;
+  display: flex;
+  flex-direction: row-reverse;
+  line-height: 24px;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.progressBg {
+  background: #e6e9ed;
+  position: relative;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressBar {
+  overflow: hidden;
+  background:$turquoise_color;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+}

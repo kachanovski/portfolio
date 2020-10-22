@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+
+}
+
+@media (max-width: 480px) {
+  .App {
+    width: 480px;
+  }
+}
