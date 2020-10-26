@@ -1,0 +1,21 @@
+.contacts {
+  height: 100px;
+  color: floralwhite;
+  padding-left: 1px;
+
+  img {
+    width: 20px;
+    padding: 10px;
+  }
+
+  img:hover {
+    background-color: #20c997;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+  }
+
+}
