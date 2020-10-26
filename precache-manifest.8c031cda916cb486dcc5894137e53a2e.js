@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf77959d8c49a3dabb4d26db5e22e726",
+    "revision": "f50d70e35eb0ca768044c58b1fc33f5b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "1f35a019baa6fe9b31e5",
-    "url": "/portfolio/static/css/main.d7a1a55c.chunk.css"
+    "revision": "aed8368003664539fcfe",
+    "url": "/portfolio/static/css/main.12009e9e.chunk.css"
   },
   {
-    "revision": "1b5c40d7eaf34a0abcf0",
-    "url": "/portfolio/static/js/2.f4b686e2.chunk.js"
+    "revision": "9583601c11f310200ede",
+    "url": "/portfolio/static/js/2.dfc8d6a6.chunk.js"
   },
   {
     "revision": "bb4c43b27eb8c651f5099d24504f50ed",
-    "url": "/portfolio/static/js/2.f4b686e2.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.dfc8d6a6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f35a019baa6fe9b31e5",
-    "url": "/portfolio/static/js/main.56b8820b.chunk.js"
+    "revision": "aed8368003664539fcfe",
+    "url": "/portfolio/static/js/main.da5e1862.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "65ae285ae55fdf96bfb1cd0427f28523",
     "url": "/portfolio/static/media/landing2.65ae285a.jpeg"
+  },
+  {
+    "revision": "fcc63bb44f34ff3adf528bde91e70434",
+    "url": "/portfolio/static/media/neroCardProject.fcc63bb4.jpg"
   },
   {
     "revision": "b37d6df3b36a74748a9bda890b3ba550",
