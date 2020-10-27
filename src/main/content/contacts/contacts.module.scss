@@ -2,8 +2,8 @@
 
 .contacts {
   @extend %main-container;
-  height: 700px;
-  background-color: #f8f9fa !important;
+  height: 800px;
+  background-color: #f8f9fa;
   display: grid;
   grid-template-rows: 300px 400px;
   justify-content: center;
@@ -26,6 +26,7 @@
 
   .contactsContainer {
     display: grid;
+    justify-content: center;
     height: 346px;
 
     @media (max-width: 480px) {

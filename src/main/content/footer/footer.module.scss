@@ -1,11 +1,15 @@
 @import "src/styles/settings";
 
 .footer {
+  width: 100%;
   height: 160px;
   display: flex;
   justify-content: center;
-  padding-left: 260px;
   align-items: center;
+
+  .textFooter {
+    margin-left: 260px;
+  }
 
   @media (max-width: 480px) {
     width: 400px;
@@ -13,11 +17,12 @@
     padding-left: 40px;
   }
 
-  span {
+  .textFooter {
     font-size: 20px;
 
     @media (max-width: 480px) {
      font-size: 15px;
+      margin: 0;
     }
   }
 }

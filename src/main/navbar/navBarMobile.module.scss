@@ -1,0 +1,56 @@
+@import "src/styles/settings";
+
+.navBarMobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+
+  .navBarMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+
+    .imgLink {
+      margin-left: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .burgerMenuContainer {
+      top: 80px;
+      width: 480px;
+      position: absolute;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 250px;
+      opacity: 1;
+      transition: opacity 3s ease-in;
+
+      .burgerMenu {
+        opacity: 0;
+        transition: opacity 2s;
+      }
+
+      .link_mobile {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 460px;
+        border-bottom: 1px white solid;
+        color: white;
+      }
+
+      :nth-child(5) {
+        border-bottom: none;
+      }
+    }
+  }
+}

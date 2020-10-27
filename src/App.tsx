@@ -7,16 +7,18 @@ import MySkills from "./main/content/services/mySkills";
 import Portfolio from "./main/content/portfolio/porfolio";
 import Contacts from "./main/content/contacts/contacts";
 import Footer from "./main/content/footer/footer";
+import NavBarMobile from './main/navbar/navBarMobile';
 
 
 const App = () => {
     return (
         <div className="App">
+            <NavBarMobile/>
             <NavBar/>
             <div className={'main'}>
                 <HomePage/>
                 <AboutMe/>
-                <MySkills />
+                <MySkills/>
                 <Portfolio/>
                 <Contacts/>
                 <Footer/>

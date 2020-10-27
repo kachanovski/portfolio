@@ -1,20 +1,12 @@
 @import "src/styles/settings";
 
 .navBar {
-  height: 100% !important;
+  height: 100%;
   width: 260px;
   background-color: #111418;
   z-index: 10;
-  position: fixed !important;
+  position: fixed;
   text-decoration: none;
-
-  @media (max-width: 480px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 480px;
-    height: 80px !important;
-  }
 
   .imgLink {
     text-decoration: none;
@@ -30,26 +22,11 @@
       border-radius: 50%;
       border: $turquoise_color 10px solid;
       margin-top: 60px;
-
-      @media (max-width: 480px) {
-        display: none;
-      }
-    }
-
-    @media (max-width: 480px) {
-      width: 80px;
-      height: 80px;
-      font-size: 20px;
-      margin:50px 0 0 0;
     }
   }
 
   .mobileMenuButton {
     display: none;
-
-    @media (max-width: 480px) {
-      display: flex;
-    }
   }
 
   .links {
@@ -65,50 +42,17 @@
     }
 
     .activeLink {
-      color:$turquoise_color;
+      color: $turquoise_color;
     }
 
     :hover {
       color: #20c997;
     }
-
-    @media (max-width: 480px) {
-      display: none;
-    }
-
   }
 
-  .burgerMenu {
-    top: 80px;
-    width: 480px;
-    position: absolute;
-    background-color: black;
-    opacity: 0.1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 250px;
-    transition: opacity 1s ease-in-out;
 
-    .link_mobile {
-      display: flex;
-      align-items: center;
-      height: 50px;
-      width: 460px;
-      border-bottom: 1px white solid;
-      color: white;
-
-
-    }
-    :nth-child(5) {
-      border-bottom: none;
-    }
-
-
-  }
-
-  .burgerMenu:after {
-    opacity: 1;
+  @media (max-width: 480px) {
+    display: none;
   }
 
 }
